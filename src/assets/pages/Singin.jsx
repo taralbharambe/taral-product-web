@@ -38,15 +38,7 @@ const Signin = () => {
     return (
       <div 
     className="signup-container" 
-    style={{
-      width: "130%", 
-      height: "500px",
-      maxWidth: "1200px", 
-      padding: "20px", 
-      margin: "0 auto", 
-      border: "1px solid #ccc", 
-      boxSizing: "border-box" 
-    }}
+
   >
         <h3>Signin</h3>
         <label>Email</label>

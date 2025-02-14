@@ -1,14 +1,16 @@
 
 
 import './App.css'
-import Signin from './assets/pages/Singin'
+import Home from './assets/pages/Home'
+
+
 
 function App() {
 
 
   return (
     <>
-    <Signin/>
+    <Home/>
 
     </>
   )

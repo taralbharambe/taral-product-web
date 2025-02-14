@@ -1,0 +1,108 @@
+/* General Styles */
+.header {
+    text-align: left; /* Align text to the left */
+    color: #898585d6;
+    background-attachment: scroll;
+    background-image: url("./images/elevated-view-camera-lens-spiral-notebook-cellphone-personal-accessories-background.jpg"); /* Replace with your image path */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh; /* Ensure the header covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+    align-items: flex-start; /* Align content to the left */
+    padding-right: 700px; /* Add padding to the left for spacing */
+
+}
+
+header .container {
+    display: flex;
+    justify-content: flex-start; /* Align container content to the left */
+    align-items: flex-start; /* Align container content to the top */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 100px; /* Increased padding for balance */
+}
+
+header .intro-text {
+    padding-top: 120px; /* Slightly more space */
+    padding-bottom: 60px;
+}
+
+header .intro-text .intro-lead-in {
+    margin-bottom: 25px;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px; /* Increased for better visibility */
+    font-weight: bold;
+    font-style: italic;
+    line-height: 28px;
+    opacity: 0; /* Start with invisible text for animation */
+    animation: fadeInLeft 1s ease-in-out forwards; /* Animation for intro-lead-in */
+    animation-delay: 0.5s; /* Delay animation */
+}
+
+header .intro-text .intro-heading {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px; /* Slightly larger */
+    font-weight: 700;
+    line-height: 60px;
+    opacity: 0; /* Start with invisible text for animation */
+    animation: fadeInLeft 1s ease-in-out forwards; /* Animation for intro-heading */
+    animation-delay: 1s; /* Delay animation */
+}
+
+.page-scroll.btn.btn-xl {
+    padding: 22px 45px; /* Slightly bigger */
+    border-color: #1ee2e7;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #1ee2e7;
+    opacity: 0; /* Start with invisible button for animation */
+    animation: fadeInLeft 1s ease-in-out forwards; /* Animation for button */
+    animation-delay: 1.5s; /* Delay animation */
+}
+
+.page-scroll.btn.btn-xl:hover,
+.page-scroll.btn.btn-xl:focus,
+.page-scroll.btn.btn-xl:active {
+    border-color: #17d0d5;
+    background-color: #17d0d5;
+    color: #fff;
+}
+
+/* Keyframes for Fade-In Animation */
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px); /* Move text from the left */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Move text to its original position */
+    }
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    header .intro-text {
+        padding-top: 280px; /* Adjusted */
+        padding-bottom: 180px;
+    }
+
+    header .intro-text .intro-lead-in {
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    header .intro-text .intro-heading {
+        font-size: 80px;
+        line-height: 85px;
+    }
+}

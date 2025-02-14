@@ -96,8 +96,8 @@ input[type="checkbox"] + label {
 
 button {
     width: 100%;
-    padding: 15px; /* Size for the button */
-    font-size: 16px; /* Text size for the button */
+    padding: 15px; 
+    font-size: 16px; 
     font-weight: bold;
     color: #ffffff;
     background: var(--primary-color);
@@ -134,3 +134,33 @@ button:active {
         font-size: 14px; 
     }
 }
+.signup-container {
+    width: 130%;
+    height: 580px;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    .signup-container {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .signup-container {
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signup-container {
+      padding: 5px;
+    }
+  }
