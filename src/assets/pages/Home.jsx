@@ -1,14 +1,10 @@
 import React, { useEffect } from 'react';
-import Navbar from './Navebar'
-import Header from './Headers'
-import Services from './Services'
-import Portfolio from './Portfolio'
-import About from './About'
-import Team from './Team'
-import Contact from './Contact'
-import Footer from './Footer'
-import Card from './Cardslider';
-
+import Navbar from './Navebar'; // Ensure the correct path
+import Header from './Headers'; // Ensure the correct path
+import Services from './Services'; // Ensure the correct path
+import About from './About'; // Ensure the correct path
+import Contact from './Contact'; // Ensure the correct path
+import Footer from './Footer'; // Ensure the correct path
 
 const Home = () => {
   useEffect(() => {
@@ -16,32 +12,39 @@ const Home = () => {
     document.querySelectorAll('a.page-scroll').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }
       });
     });
 
-    // Scrollspy
+    // Scrollspy (optional)
     window.addEventListener('scroll', () => {
       const scrollY = window.scrollY;
       // Add logic to highlight the active section in the navbar
     });
   }, []);
+
   return (
     <div>
-      <Navbar/>
-      <Header/>
-      <Services/>
-      <Portfolio/>
-      <About/>
-      <Team/>
-      <Contact/>
-      <Footer/>
-      
-
+      <Navbar />
+      <Header />
+      <section id="services">
+        <Services />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

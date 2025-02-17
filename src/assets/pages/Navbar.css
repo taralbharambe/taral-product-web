@@ -1,6 +1,4 @@
-/* Navbar.css - Advanced Styling for React Navbar */
 
-/* General Navbar Styles */
 .navbar {
   background: rgba(0, 0, 0, 0.8);
   padding: 15px 0;
@@ -113,4 +111,22 @@
   .navbar-collapse.show {
     display: flex;
   }
+}
+
+.login-button {
+
+  padding: 10px 15px;
+  background: #37dcd7;
+  color: #000;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.login-button:hover {
+  background: #e67e22;
+  color: #fff;
+}
+
+.login-icon {
+  margin-right: 8px;
 }
