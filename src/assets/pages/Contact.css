@@ -1,4 +1,4 @@
-/* ContactForm.css */
+
 :root {
     --color-gray: #3f3b3b;
     --color-black: #000;
@@ -133,7 +133,7 @@
     color: var(--color-black);
   }
   
-  /* Responsive Adjustments */
+  /
   @media (max-width: 768px) {
     .main-wrapper {
       padding: 1.5rem;

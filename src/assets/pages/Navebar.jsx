@@ -45,6 +45,7 @@ const Navbar = () => {
                 <FaUser className="login-icon" /> Login
               </Link>
             </li>
+            
           </ul>
         </div>
       </div>

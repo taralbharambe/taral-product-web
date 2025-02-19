@@ -1,7 +1,11 @@
 import React from 'react';
 import "./Header.css"
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+  const navigate = useNavigate();
+
+
   return (
     <header className='header'>
       <div className="container"  style={{
@@ -17,7 +21,7 @@ const Header = () => {
           <div className="intro-heading">When in doubt,
             <br />
              shop it out</div>
-          <a href="#services" className="page-scroll btn btn-xl">
+          <a href="#services" className="page-scroll btn btn-xl" onClick={()=>navigate('/products')}>
             Get started
           </a>
         </div>

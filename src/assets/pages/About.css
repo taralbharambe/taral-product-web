@@ -1,4 +1,4 @@
-/* General Styles */
+
 .reset-margin-padding {
     margin: 0;
     padding: 0;
@@ -154,34 +154,34 @@
     position: absolute;
     top: -34px;
 }
-/* History Image Styles */
+
 .history-img {
-    width: 400px; /* Ensure the container takes full width */
-    height: 300px; /* Fixed height for the image container */
-    overflow: hidden; /* Hide any overflow to maintain fixed size */
-    position: relative; /* For positioning the image */
+    width: 400px; 
+    height: 300px; 
+    overflow: hidden; 
+    position: relative; 
   }
   
   .history-image {
-    width: 100%; /* Ensure the image takes full width of its container */
-    height: 100%; /* Ensure the image takes full height of its container */
-    object-fit: cover; /* Maintain aspect ratio and cover the container */
-    object-position: center; /* Center the image within the container */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   
-  /* Responsive Adjustments */
+  
   @media (max-width: 768px) {
     .history-img {
-      height: 250px; /* Adjust height for smaller screens */
+      height: 250px; 
     }
   }
   
   @media (max-width: 576px) {
     .history-img {
-      height: 200px; /* Adjust height for even smaller screens */
+      height: 200px;
     }
   }
-  /* History Content Styles */
+ 
 .history-content {
     background: #fff;
     padding: 20px;
@@ -213,33 +213,33 @@
     color: #555;
     margin-bottom: 15px;
   }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .history-content .title-bg-small {
-      font-size: 10px; /* Smaller font size for tablets */
+      font-size: 10px; 
     }
   
     .history-content .column-title {
-      font-size: 20px; /* Smaller font size for tablets */
+      font-size: 20px; 
     }
   
     .history-content .history-description {
-      font-size: 12px; /* Smaller font size for tablets */
-      line-height: 1.5; /* Adjust line height for better readability */
+      font-size: 12px; 
+      line-height: 1.5; 
     }
   }
   
   @media (max-width: 576px) {
     .history-content .title-bg-small {
-      font-size: 8px; /* Smaller font size for mobile devices */
+      font-size: 8px; 
     }
   
     .history-content .column-title {
-      font-size: 18px; /* Smaller font size for mobile devices */
+      font-size: 18px; 
     }
   
     .history-content .history-description {
-      font-size: 11px; /* Smaller font size for mobile devices */
+      font-size: 11px;
     }
   }
   

@@ -14,7 +14,7 @@
     letter-spacing: 2px;
   }
   
-  /* Slider Container */
+ 
   .slider {
     display: flex;
     overflow-x: hidden;
@@ -26,7 +26,7 @@
     position: relative;
   }
   
-  /* Card Styles */
+ 
   .card {
     flex: 0 0 auto;
     width: 220px;
@@ -67,7 +67,7 @@
     margin: 10px 0;
   }
   
-  /* Slider Navigation Buttons (Optional) */
+ 
   .slider-nav {
     position: absolute;
     top: 50%;

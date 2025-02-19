@@ -12,10 +12,10 @@ const Signup = () => {
   const [showPassword, setShowPassword] = useState(false);
   const auth = getAuth(app);
   const provider = new GoogleAuthProvider();
-  const navigate = useNavigate(); // Initialize the navigation function
+  const navigate = useNavigate(); 
 
 
-  // Apply inline styles to the body element
+  
   useEffect(() => {
     document.body.style.fontFamily = "'Roboto', sans-serif";
     document.body.style.margin = "0";
@@ -27,7 +27,7 @@ const Signup = () => {
     document.body.style.height = "100vh";
     document.body.style.color = "var(--text-color)";
 
-    // Cleanup function to reset styles when the component unmounts
+   
     return () => {
       document.body.style.fontFamily = "";
       document.body.style.margin = "";

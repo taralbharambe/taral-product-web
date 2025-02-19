@@ -6,6 +6,11 @@ import About from './assets/pages/About';
 import Contact from './assets/pages/Contact';
 import Signin from './assets/pages/Singin';
 import { Routes, Route } from 'react-router-dom';
+import ProductPage from './assets/pages/produts';
+import CartPage from './assets/pages/CartPage';
+
+
+
 
 function App() {
   return (
@@ -17,6 +22,9 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/signin" element={<Signin />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/products" element={<ProductPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        
       </Routes>
       
     </>

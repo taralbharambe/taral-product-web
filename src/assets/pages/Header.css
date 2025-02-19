@@ -1,61 +1,59 @@
-/* General Styles */
 .header {
-    text-align: left; /* Align text to the left */
+    text-align: left;
     color: #898585d6;
     background-attachment: scroll;
-    background-image: url("./images/elevated-view-camera-lens-spiral-notebook-cellphone-personal-accessories-background.jpg"); /* Replace with your image path */
+    background-image: url("./images/elevated-view-camera-lens-spiral-notebook-cellphone-personal-accessories-background.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh; /* Ensure the header covers the full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: flex-start; /* Align content to the left */
-    padding-right: 700px; /* Add padding to the left for spacing */
-
+    justify-content: center;
+    align-items: flex-start;
+    padding-right: 700px;
 }
 
 header .container {
     display: flex;
-    justify-content: flex-start; /* Align container content to the left */
-    align-items: flex-start; /* Align container content to the top */
+    justify-content: flex-start;
+    align-items: flex-start;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 0 100px; /* Increased padding for balance */
+    padding: 0 100px;
 }
 
 header .intro-text {
-    padding-top: 120px; /* Slightly more space */
+    padding-top: 120px;
     padding-bottom: 60px;
 }
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 24px; /* Increased for better visibility */
+    font-size: 24px;
     font-weight: bold;
     font-style: italic;
     line-height: 28px;
-    opacity: 0; /* Start with invisible text for animation */
-    animation: fadeInLeft 1s ease-in-out forwards; /* Animation for intro-lead-in */
-    animation-delay: 0.5s; /* Delay animation */
+    opacity: 0;
+    animation: fadeInLeft 1s ease-in-out forwards;
+    animation-delay: 0.5s;
 }
 
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
     font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 50px; /* Slightly larger */
+    font-size: 50px;
     font-weight: 700;
     line-height: 60px;
-    opacity: 0; /* Start with invisible text for animation */
-    animation: fadeInLeft 1s ease-in-out forwards; /* Animation for intro-heading */
-    animation-delay: 1s; /* Delay animation */
+    opacity: 0;
+    animation: fadeInLeft 1s ease-in-out forwards;
+    animation-delay: 1s;
 }
 
 .page-scroll.btn.btn-xl {
-    padding: 22px 45px; /* Slightly bigger */
+    padding: 22px 45px;
     border-color: #1ee2e7;
     border-radius: 3px;
     text-transform: uppercase;
@@ -64,9 +62,9 @@ header .intro-text .intro-heading {
     font-weight: 700;
     color: #fff;
     background-color: #1ee2e7;
-    opacity: 0; /* Start with invisible button for animation */
-    animation: fadeInLeft 1s ease-in-out forwards; /* Animation for button */
-    animation-delay: 1.5s; /* Delay animation */
+    opacity: 0;
+    animation: fadeInLeft 1s ease-in-out forwards;
+    animation-delay: 1.5s;
 }
 
 .page-scroll.btn.btn-xl:hover,
@@ -77,22 +75,20 @@ header .intro-text .intro-heading {
     color: #fff;
 }
 
-/* Keyframes for Fade-In Animation */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translateX(-50px); /* Move text from the left */
+        transform: translateX(-50px);
     }
     to {
         opacity: 1;
-        transform: translateX(0); /* Move text to its original position */
+        transform: translateX(0);
     }
 }
 
-/* Responsive Design */
 @media (min-width: 768px) {
     header .intro-text {
-        padding-top: 280px; /* Adjusted */
+        padding-top: 280px;
         padding-bottom: 180px;
     }
 

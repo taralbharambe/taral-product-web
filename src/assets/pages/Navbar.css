@@ -9,14 +9,13 @@
   z-index: 1000;
 }
 
-/* Shrink Navbar on Scroll */
+
 .navbar-shrink {
   padding: 10px 0;
   background: rgba(0, 0, 0, 0.95);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Navbar Container */
 .container {
   display: flex;
   justify-content: space-between;
@@ -26,7 +25,7 @@
   
 }
 
-/* Navbar Brand */
+
 .navbar-brand {
   font-size: 1.8rem;
   font-weight: bold;
@@ -40,7 +39,7 @@
   color: #f39c12;
 }
 
-/* Navbar Links */
+
 .navbar-nav {
   display: flex;
   list-style: none;
@@ -66,7 +65,7 @@
   color: #000;
 }
 
-/* Active Link Styling */
+
 .navbar-nav .active a {
   background: #f39c12;
   color: #000;

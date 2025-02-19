@@ -1,4 +1,4 @@
-/* Footer.css */
+
 :root {
     --color-primary: #ff5e14;
     --color-white: #fff;
@@ -80,8 +80,8 @@
   }
   .frow {
     display: flex;
-    justify-content: space-between; /* Ensures equal spacing */
-    gap: 30px; /* Adds spacing between all three divs */
+    justify-content: space-between; 
+    gap: 30px;
 }
 
   

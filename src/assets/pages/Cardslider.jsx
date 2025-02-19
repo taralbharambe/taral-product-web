@@ -5,7 +5,7 @@ const Card = () => {
   const [products, setProducts] = useState([]);
   const sliderRef = useRef(null);
 
-  // Fetch data from the API
+ 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((response) => response.json())
@@ -13,31 +13,30 @@ const Card = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  // Automatic slider functionality
   useEffect(() => {
     const slider = sliderRef.current;
     let scrollAmount = 0;
     const slideTimer = setInterval(() => {
       if (slider) {
-        scrollAmount += 220; // Adjust based on card width
+        scrollAmount += 220; 
         if (scrollAmount >= slider.scrollWidth - slider.clientWidth) {
-          scrollAmount = 0; // Reset to the beginning
+          scrollAmount = 0;
         }
         slider.scrollTo({
           left: scrollAmount,
           behavior: "smooth",
         });
       }
-    }, 3000); // Adjust the interval time as needed
+    }, 3000); 
 
-    return () => clearInterval(slideTimer); // Cleanup on unmount
+    return () => clearInterval(slideTimer);
   }, []);
 
-  // Manual navigation functions
+ 
   const scrollLeft = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollBy({
-        left: -220, // Adjust based on card width
+        left: -220,
         behavior: "smooth",
       });
     }
@@ -46,7 +45,7 @@ const Card = () => {
   const scrollRight = () => {
     if (sliderRef.current) {
       sliderRef.current.scrollBy({
-        left: 220, // Adjust based on card width
+        left: 220, 
         behavior: "smooth",
       });
     }
